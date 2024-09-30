@@ -1,4 +1,9 @@
 /* styles.css */
+@font-face {
+    font-family: 'Pixeloid Sans';
+    src: url('fonts/PixeloidSans.ttf') format('truetype'); /* Adjusted to .ttf */
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -28,7 +33,7 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: transparent; /* No color, just blur */
-    filter: blur(5px); /* Start with 95% blur (5px is a high blur) */
+    filter: blur(10px); /* Start with a high blur */
     transition: filter 1s ease; /* Transition for the blur effect */
 }
 
