@@ -1,0 +1,38 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path/to/your/background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    opacity: 0; /* Start hidden */
+    transition: opacity 2s ease; /* Adjust duration as needed */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Ensure it is above the background */
+    text-align: center;
+}
+
+.email-input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px; /* Adjust width as needed */
+}
+
+.submit-button {
+    padding: 10px 20px;
+}
