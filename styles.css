@@ -15,16 +15,22 @@ body, html {
     font-family: 'Pixeloid Sans', Arial, sans-serif; /* Ensure the new font is used */
 }
 
-.background {
+.background-wrapper {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden; /* Prevent the blur from leaking outside the wrapper */
+}
+
+.background {
+    width: 100%;
+    height: 100%;
     background-image: url('images/sg_back_new.jpg');
     background-size: cover;
-    filter: blur(10px); /* Ensure blur is applied initially */
-    transition: filter 1s ease; /* Transition should be in place */
+    filter: blur(10px);
+    transition: filter 1s ease;
 }
 
 .overlay {
