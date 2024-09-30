@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.filter = 'blur(0px)'; // Remove the blur effect
     }, 1000); // Start after 1 second
 
-    // Optional: If you want to ensure the transition takes 1 minute
-    setTimeout(() => {
-        overlay.style.transition = `filter ${duration}ms ease`; // Set transition duration
-    }, 1000); // Start transition after 1 second
+    // Set the transition duration for the blur effect
+    overlay.style.transition = `filter ${duration}ms ease`; // Set transition duration
 });
