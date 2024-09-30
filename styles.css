@@ -82,6 +82,6 @@ body, html {
     }
 
     .email-input, .submit-button {
-        width: 80%; /* Make input and button take up more horizontal space on mobile */
+        width: 70%; /* Make input and button take up more horizontal space on mobile */
     }
 }
