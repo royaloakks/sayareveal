@@ -42,20 +42,24 @@ body, html {
     padding: 30px; /* Increased padding */
     margin: 10px 0;
     width: 200px; /* Adjust width as needed */
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 50px; /* Rounded corners set to 50px */
     border: none; /* No border around the input box */
     font-family: 'Pixeloid Sans', Arial, sans-serif; /* Ensure the Pixeloid font is used */
 }
 
 .submit-button {
     padding: 30px; /* Increased padding */
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 50px; /* Rounded corners set to 50px */
     background-color: darkgrey; /* Dark grey background */
     color: white; /* White text color */
     border: none; /* Remove default border */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-family: 'Pixeloid Sans', Arial, sans-serif; /* Ensure the Pixeloid font is used */
     margin-top: 10px; /* Margin below the input box */
+    display: block; /* Ensure the button is a block element */
+    width: 200px; /* Match the width of the input box */
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
 }
 
 .submit-button:hover {
