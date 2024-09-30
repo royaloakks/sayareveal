@@ -71,8 +71,10 @@ body, html {
 
 @media only screen and (max-width: 600px) {
     .background {
-        background-size: cover; /* Ensure the image still covers the entire viewport */
-        background-position: center; /* Center the image on smaller screens */
+        top: -20px; /* Increase the top and left offsets for mobile to ensure no border shows */
+        left: -20px;
+        width: calc(100% + 40px); /* Further expand the size on mobile */
+        height: calc(100% + 40px);
     }
 
     .container {
