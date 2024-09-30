@@ -23,6 +23,8 @@ body, html {
     height: 100%;
     background-image: url('images/sg_back_new.jpg'); /* Background image */
     background-size: cover;
+    filter: blur(10px); /* Start with a strong blur (10px is a strong blur) */
+    transition: filter 1s ease; /* Transition for the background */
 }
 
 .overlay {
