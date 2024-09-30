@@ -17,14 +17,14 @@ body, html {
 
 .background {
     position: absolute;
-    top: -5px; /* Offset the background image by -5px from the top */
-    left: -5px; /* Offset the background image by -5px from the left */
-    width: calc(100% + 5px); /* Adjust width to compensate for the negative offset */
-    height: calc(100% + 5px); /* Adjust height to compensate for the negative offset */
-    background-image: url('images/sg_back_new.jpg'); /* Background image */
+    top: -10px; /* Extend beyond the viewport slightly */
+    left: -10px;
+    width: calc(100% + 20px); /* Increase the width and height */
+    height: calc(100% + 20px);
+    background-image: url('images/sg_back_new.jpg');
     background-size: cover;
-    filter: blur(10px); /* Ensure blur is applied initially */
-    transition: filter 1s ease; /* Transition should be in place */
+    filter: blur(10px);
+    transition: filter 1s ease;
 }
 
 .container {
