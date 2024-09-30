@@ -17,26 +17,14 @@ body, html {
 
 .background {
     position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
-    background-image: url('images/sg_back_new.jpg');
+    top: -5px; /* Offset the background image by -5px from the top */
+    left: -5px; /* Offset the background image by -5px from the left */
+    width: calc(100% + 5px); /* Adjust width to compensate for the negative offset */
+    height: calc(100% + 5px); /* Adjust height to compensate for the negative offset */
+    background-image: url('images/sg_back_new.jpg'); /* Background image */
     background-size: cover;
-    filter: blur(10px);
-    transition: filter 1s ease;
-}
-
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent; /* No color, just blur */
-    filter: blur(10px); /* Start with a high blur (10px is a strong blur) */
-    transition: filter 1s ease; /* Transition for the blur effect */
+    filter: blur(10px); /* Ensure blur is applied initially */
+    transition: filter 1s ease; /* Transition should be in place */
 }
 
 .container {
@@ -45,12 +33,29 @@ body, html {
     text-align: center;
 }
 
+.login-text {
+    font-size: 24px; /* Adjust font size for "Log In" text */
+    color: white; /* Set text color to white */
+}
+
 .email-input {
     padding: 10px;
     margin: 10px 0;
     width: 200px; /* Adjust width as needed */
+    border-radius: 20px; /* Rounded corners */
+    font-family: 'Pixeloid Sans', Arial, sans-serif; /* Ensure the Pixeloid font is used */
 }
 
 .submit-button {
     padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners */
+    background-color: darkgrey; /* Dark grey background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Pixeloid Sans', Arial, sans-serif; /* Ensure the Pixeloid font is used */
+}
+
+.submit-button:hover {
+    background-color: #a9a9a9; /* Slightly lighter grey on hover */
 }
